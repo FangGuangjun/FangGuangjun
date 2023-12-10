@@ -1,0 +1,15 @@
+Library/
+Temp/
+Logs/
+UserSettings/
+Obj/
+*.vs/
+*.idea/
+.vsconfig
+*.sln
+*.csproj
+*.sln
+*.userprefs
+*.unityproj
+*.DS_Store
+bakery_times.log
