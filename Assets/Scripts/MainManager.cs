@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour
 {
-    private Animator m_BetalRotate_1_Ani;
-    private Animator m_HandTipsAni;
-    private Animator m_BetalRotate_2_Ani;
-    private Image m_Process_bar_prompt_2;
-    public Button m_StartRotateBtn;
+    private Animator m_BetalRotate_1_Ani;//搅拌棍动画
+    private Animator m_BetalRotate_2_Ani;//搅拌棍动画
+    private Animator m_HandTipsAni;//手提示动画
+    private Image m_Process_bar_prompt_2;//进度条
+    public Button m_StartRotateBtn;//开始搅拌按钮
     public GameObject Egg;
     public Texture[] Egg_Texture;
     private Material Egg_Material;
@@ -18,13 +18,13 @@ public class MainManager : MonoBehaviour
     private bool IsOne1;
     private bool IsOne2;
     private float timer;
-    public ParticleSystem eggEff;
-    public ParticleSystem endEff;
+    public ParticleSystem eggEff;//搅拌蛋特效
+    public ParticleSystem endEff;//结束特效
     private float conut;
     private Vector3 oldPosition;
     void Start()
     {
-        oldPosition=transform.position;
+        oldPosition=transform.position;//搅拌机初始位置
         //所有动画初始化
         m_BetalRotate_1_Ani = transform.Find("betals/betal").GetComponent<Animator>();
         m_BetalRotate_1_Ani.speed = 0f;
