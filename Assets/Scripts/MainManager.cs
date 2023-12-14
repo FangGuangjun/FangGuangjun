@@ -128,7 +128,7 @@ public class MainManager : MonoBehaviour
     {
         // 将鼠标当前屏幕坐标转换为世界坐标
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = -Camera.main.transform.position.z;
+        mousePosition.z = Camera.main.transform.position.z;
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 }
